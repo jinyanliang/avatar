@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="animate.css"/>
+		<link rel="stylesheet" type="text/css" href="avatar.css"/>
+		<link rel="stylesheet" type="text/css" href="dialog.css"/>
+		<title></title>
+	</head>
+	<body>
+		<button @click="upload">点击上传图片</button>
+		<div class="dialog hide dialog-1" data-width="540px" data-height="" data-ani-name="rubberBand" data-ani-close-name="bounceOut">
+			<section class="sect">
+				<div class="layer-title">
+					<p>头像设置</p>
+				</div>
+				<div class="content">
+					<div class="j-avatar-wrap"></div>
+					<button class="upimg">上传图片</button>
+					<div class="content-bottom">
+						<button id="save_button" class="bot-width bnt-ru" @click="saveAvatar">确定</button>
+						<button class="bot-cancel dialog-close  bnt-ru">取消</button>
+					</div>
+				</div>
+			</section>
+		</div>
+		<img src="" class="img"/>
+		<script src="./js/vue.min.js"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="./js/require.js"></script>
+		<script type="text/javascript">
+			require(["./js/main"]);
+		</script>
+	</body>
+
+</html>
